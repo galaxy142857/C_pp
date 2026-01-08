@@ -1,7 +1,8 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main(){
+int main(){  // 10818
     int n=0;
     cin >> n;
 
@@ -27,23 +28,25 @@ int main(){
     cout << min << " " << max;
 }
 
-// int main(){
+
+
+// int main(){  //10871
 //     int a=0;
 //     int b=0;
 //     cin >> a >> b;
-    
+
 //     string s;
 //     getline(cin, s);
-    
+
 //     for (int i=0; i<a; i++){
-//         if (s[i]<b){
-//             cout << s[i];
-//         }
-//     }
-// }
-
-
-// int main(){
+    //         if (s[i]<b){
+        //             cout << s[i];
+        //         }
+        //     }
+        // }
+        
+        
+// int main(){  // ok
 
 //     int t=0;
 //     cin >> t;
@@ -51,7 +54,7 @@ int main(){
 //     for (int i=0; i<t; i++){
 //         string s;
 //         cin >> s;
-//         cout << s[0] << s[-1] << '\n';
+//         cout << s[0] << s[s.length()-1] << '\n';
 //     }
 //     return 0;
 // }
