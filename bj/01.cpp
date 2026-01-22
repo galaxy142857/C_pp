@@ -12,9 +12,8 @@ int main(){  // 10818
     for(int i; i<n; i++)
         cin >> p[i];
     
-    // string s;
-    // getline(cin,s);
-
+    string s;
+    getline(cin,s);
 
     int min=1000000;
     int max=-1000000;

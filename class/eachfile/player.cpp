@@ -6,10 +6,15 @@ Player::Player(){
     cout << "Constructor" << '\n';
     name="Lee";
     hp=0;
+    p = nullptr;
+
+    if (p==nullptr)
+        p = new int[5];
 }
 
 Player::~Player(){
-    delete[] p;
+    if (p!=nullptr)
+        delete[] p;
 }
 
 void Player::show(){

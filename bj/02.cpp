@@ -1,21 +1,53 @@
-// 2차원 배열 문제들 (2중 포인터)
+// 2차원 배열 문제들 (2중 포인터, vector - 템플릿)
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int main(){  // 2566
-    int **pp=new int *[9];
-    for (int i=0; i<9; i++){
-        pp[i]=new int [9];
+int main(){  //10798
+    
+    // vector<int> v (15);
+    // string s;
+    // cin >> s;
 
-        for (int j=0; j<9, j++){
-            cin >> pp[i][j];
-        }
-    }
+    string s[5];
+
+
+    // int **pp = new int *[5];
+    // for (int i=0; i<5; i++){
+    //     pp[i] = new int [15];
+
+    //     for (int j=0; j<15; j++){
+    //         cin >> pp[i][j];
+    //     }
+    // }
+    // cout << pp;
 }
 
 
-// int main(){   // 2738
+
+
+// int main(){  // 2566  end
+//     int max = 0;
+//     int mi=1, mj=1;
+//     int **pp=new int *[9];
+//     for (int i=0; i<9; i++){
+//         pp[i]=new int [9];
+
+//         for (int j=0; j<9; j++){
+//             cin >> pp[i][j];
+//             if (max < pp[i][j]){
+//                 max = pp[i][j];
+//                 mi = i+1;
+//                 mj = j+1;
+//             }
+//         }
+//     }
+//     cout << max << '\n' << mi << ' ' << mj;
+// }
+
+
+// int main(){   // 2738 end
 
 //     int n, m;
 //     cin >> n >> m;

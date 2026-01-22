@@ -5,7 +5,7 @@ class Player{
     
     // 함수의 선언만 진행
     public:    
-        Player();
+        Player() ;
         ~Player();  // 생략 가능
 
         void show();
