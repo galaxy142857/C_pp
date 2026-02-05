@@ -7,8 +7,22 @@ using namespace std;
 
 int main(){   // 1152
 
-    vector<string> v;
-    while
+    //vector<string> v;
+    string s;
+    getline(cin,s,'\n');  // '\n'까지 한 줄 통으로 받음
+
+    int idx=1;
+    int a=0;
+    int i=0;
+    while (true){
+    
+        a=s.find(' ', idx);
+        if (a>=s.size()-1)
+            break;
+        i++;
+        idx=a+1;
+    }
+    cout << i+1;
 
     return 0;
 }
