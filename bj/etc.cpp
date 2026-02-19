@@ -1,43 +1,56 @@
-#include <iostream>
 #include <set>
+#include <iostream>
+#include <cmath>
 using namespace std;
 
-int main(){  // 2745
+int main(){
 
-    string n;
+    long long n;
     int b;
+    cin >> n >> b;
+
+    string x;
+    int q,r;
+    while (b<=n){
+        q=n/b;
+        r=n%b;
+
+        n=q;
+        if (r<10)
+            x.insert(x.begin(),r+'0');
+        else
+            x.insert(x.begin(),r+'A'-10);
+    }
+    if (n<10)
+        x.insert(x.begin(),n+'0');
+    else
+        x.insert(x.begin(),n+'A'-10);
+    cout << x;
 
     return 0;
 }
 
+// int main(){  // 2745
 
-// int main(){
+//     string n;
+//     int b;
+//     cin >> n >> b;
 
-//     int t=0;
-//     cin >> t;
-
-//     for (int i=0; i<t; i++){
-//         int h,w,n;
-//         cin >> h >> w >> n;
-
-//         int x,y;
-//         x=n/h+1;
-//         y=n%h;
-
-//         if (y==0){
-//             y=h;
-//             x-=1;
-//         }
-
-//         if (x<10)
-//             cout << y << 0 << x;
+//     long long cnt=0;   // overflow 방지
+//     int k=0;
+//     for (int i=0; i<n.length(); i++){
+//         if (n[i]>'@')
+//             k = n[i]-'7';
 //         else
-//             cout << y << x;
-//         cout << '\n';
+//             k = n[i]-'0';
+
+//         cnt += k*pow(b,(n.length()-i-1));
 //     }
+//     cout << cnt;
 
 //     return 0;
 // }
+
 
 
 // int main(){
